@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website Under Construction</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+.wrapper {
+    background: #ffffff;
+    color: #1f2937;
+    padding: 60px 50px;
+    border-radius: 16px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #2563eb;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    color: #4b5563;
+}
+
+.progress-container {
+    background: #e5e7eb;
+    border-radius: 50px;
+    height: 8px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 65%;
+    background: linear-gradient(90deg, #2563eb, #3b82f6);
+    border-radius: 50px;
+    animation: loading 2s ease-in-out infinite alternate;
+}
+
+@keyframes loading {
+    from { width: 60%; }
+    to { width: 75%; }
+}
+
+.percent {
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 30px;
+}
+
+.contact {
+    font-size: 14px;
+    color: #6b7280;
+}
+
+.contact a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    margin-top: 40px;
+    font-size: 12px;
+    color: #9ca3af;
+}
+
+@media (max-width: 480px) {
+    .wrapper {
+        padding: 40px 25px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <div class="logo">ITNI Inc. </div>
+
+    <h1>홈페이지 준비 중입니다</h1>
+
+    <div class="description">
+        현재 홈페이지를 새롭게 준비하고 있습니다.<br>
+        빠른 시일 내에 찾아뵙겠습니다.
+    </div>
+
+    <div class="progress-container">
+        <div class="progress-bar"></div>
+    </div>
+
+    <div class="percent">서비스 준비 진행중</div>
+
+    <div class="contact">
+        문의 : <a href="mailto:contact@company.com">itni0123@daum.net</a>
+    </div>
+
+    <div class="footer">
+        © 2026 ITNI Inc. All Rights Reserved.
+    </div>
+
+</div>
+
+</body>
+</html>
