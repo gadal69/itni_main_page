@@ -1567,9 +1567,20 @@
         const contactForm = document.getElementById('contactForm');
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
+
+          emailjs.sendForm(
+                'YOUR_SERVICE_ID',   // EmailJS 서비스ID
+                'YOUR_TEMPLATE_ID',  // EmailJS 템플릿ID
+                this
+            )
+         .then(function() {   
             alert('메시지가 성공적으로 전송되었습니다! 곧 연락드리겠습니다.');
             contactForm.reset();
-        });
+
+             }, function(error) {
+                alert('전송 실패: ' + JSON.stringify(error));
+            });
+       
 
         // Navbar background on scroll
         window.addEventListener('scroll', () => {
